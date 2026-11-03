@@ -1,0 +1,230 @@
+* {
+	padding: 0;
+	margin: auto;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+	color: white;
+	font-family: system-ui, apple-system, Roboto, Arial;
+}
+
+/* Header*/
+header {
+	background-color: brown;
+}
+
+.header__container {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-content: center;
+	max-width: 1920px;
+	padding: 16px 12px
+}
+
+.header__container__title {
+	font-size: clamp(1.5rem, 1.8rem, 2.5rem);
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+#headerSecondWord {
+	color: orange;
+}
+
+.header__container__nav > ul > li {
+	display: inline;
+}
+
+.header__container__nav > ul > li > a {
+	color: white;
+	text-decoration: none;
+	margin: 0px 8px;
+}
+
+.header__btn__primary {
+	color: black;
+	text-decoration: none;
+	padding: 12px;
+	border-radius: 16px;
+	background-color: orange;
+}
+.header__btn__secondary {
+	color: white;
+	text-decoration: none;
+	padding: 12px;
+	border-radius: 16px;
+	border: 1px solid white;
+}
+
+
+
+/* Section */
+section {
+	margin: auto;
+	padding: 0px 12px;
+	max-width: 1440px;
+}
+
+
+/* hero section */
+
+.hero {
+	background-image: linear-gradient(to bottom, black, orange);
+		padding: 96px 0px;
+}
+
+.hero__container {
+	display: flex;
+	flex-flow: column;
+}
+
+.hero__cta {
+	margin: 24px;
+}
+
+.hero__btn__cta__primary {
+	color: black;
+	text-decoration: none;
+	padding: 12px;
+	border-radius: 16px;
+	background-color: orange;
+}
+.hero__btn__cta__secondary {
+	color: white;
+	text-decoration: none;
+	padding: 12px;
+	border-radius: 16px;
+	border: 1px solid white;
+}
+
+/* Banner Section */
+
+.banner {
+	background-color: orange;
+}
+
+.banner__container {
+	display: flex;
+	flex-flow: row nowrap;
+	padding: 12px;
+}
+
+.banner__container > ul {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	list-style: none;
+	width: 100%;
+	color: black;
+}
+
+/* Frame Two */
+
+.frameTwo {
+	padding: 48px;
+}
+
+.frameTwo__container {
+	margin: 96px 0px;
+}
+.frameTwo__container > div {
+	margin: 24px 0px;
+}
+
+/* Frame Three */
+
+.frameThree {
+	padding: 48px;
+	background-color: brown;
+}
+
+.frameThree__container {
+	margin: 96px 0px;
+}
+.frameThree__container > div {
+	margin: 24px 0px;
+}
+
+/* Cards */
+
+.frameTwo__card__container {
+	display: flex;
+	flex-flow: row;
+	gap: 8px;
+	justify-content: space-between;
+}
+
+.frameTwo__card {
+	position: relative;
+}
+
+.frameTwo__card::before {
+	display: block;
+	position: absolute;
+	left: -10px;
+	content: " ";
+	height: 100%;
+	width: 4px;
+	background-color: orange;
+}
+
+.frame__card__header {
+	font-weight: 700;
+	font-size: clamp(0.8rem, 1.25rem, 2.5rem);
+}
+
+.cards__container {
+	display: flex;
+	flex-flow: row;
+	gap: 8px;
+}
+
+.card {
+	border: none;
+	border-radius: 16px;
+	background-color: rgba(255,122,0,1);
+	padding: 8px;
+}
+
+.card__num {
+	font-weight: 700;
+	margin: 8px 0px;
+	font-size: clamp(1.5rem, 1.8rem, 2.5rem);
+}
+
+.card__header {
+	font-weight: 700;
+	margin: 4px 0px;
+	font-size: clamp(0.8rem, 1.25rem, 2.5rem);
+}
+
+/* Essentials */
+
+.orange_text {
+	color: orange;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.large_text {
+	font-size: clamp(1.8rem, 2.5rem, 3.5rem);
+}
+
+.xlarge_text {
+	font-size: clamp(2.5rem, 3.5rem, 5rem)
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.enclosed {
+	border: 1px solid white;
+	border-radius: 12px;
+	padding: 4px;
+}
